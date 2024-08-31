@@ -11,7 +11,7 @@ def main():
     df = load_data()
 
     # 특정 날짜 범위 선택
-    st.subheader('Select Date Range')
+    st.subheader('요일 범위 선택')
     df['Date'] = pd.to_datetime(df['Date'])
     start_date = st.date_input('시작일', df['Date'].min())
     end_date = st.date_input('종료일', df['Date'].max())
