@@ -6,7 +6,7 @@ import streamlit as st
 from data_loader import load_data
 
 def main():
-    st.title('대시보드')
+    st.title('브랜치 연습')
 
     df = load_data()
 
